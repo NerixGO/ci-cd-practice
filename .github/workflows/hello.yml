@@ -11,6 +11,8 @@ jobs:
 
     steps:
 
-      - name: Say hello
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
+      - name: Say hello
         run: echo "Hello CI!"
