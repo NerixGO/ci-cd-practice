@@ -26,14 +26,7 @@ public class Converter {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.println("""
-Choose what do you want to convert:
-1. Celsius to Fahrenheit
-2. Fahrenheit to Celsius
-3. Kilometers to miles
-4. Miles to kilometers
-5. Kilograms to pounds
-""");
+        System.out.println("Choose what do you want to convert:\n1. Celsius to Fahrenheit\n2. Fahrenheit to Celsius\n3. Kilometers to miles\n4. Miles to kilometers\n5. Kilograms to pounds\n");
 
         int operator = input.nextInt();
 
@@ -64,8 +57,7 @@ Choose what do you want to convert:
                 System.out.println(kgToPounds(input.nextFloat()) + " pounds");
             }
 
-            default ->
-                System.out.println("Wrong operator");
+            default -> System.out.println("Wrong operator");
         }
 
         input.close();
